@@ -1,0 +1,91 @@
+body, html {
+	border:none;
+	margin:0;
+	padding:0;
+    font-size: 1em;
+    line-height: 1.4;
+    background:#040404;
+}
+
+a {
+    color: #00e;
+    outline:0;
+}
+
+a:visited {
+    color: #551a8b;
+}
+
+a:hover {
+    color: #06e;
+}
+
+a img {
+	border:none;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+.main-wrapper {
+	width:60%;
+	max-width: 750px;
+	margin:0 auto;
+}    
+
+.white-line {
+	border-top:2px #fff solid;
+	line-height:0;
+	display: block;
+    margin:0 5%
+}
+
+.header-image {
+    margin:85px 0 0;
+}
+h1 {
+    margin:110px 0;
+}
+h1 img {
+   width:100%; 
+}
+
+.social-icons {
+    margin:85px 5% 0;
+}
+.social-icons .icon-spacer{
+    display: block;
+    width:9%;
+    float:left;
+}
+.social-icons a.social-icon {
+    width:18.25%;
+    display:block;
+    float:left;
+}
+.social-icons a.social-icon:hover img{
+    opacity: 0.8;
+}
+.social-icons a.social-icon img{
+    width:100%;
+}
+
+@media only screen and (max-width: 640px) {
+    .main-wrapper {
+        width: 90%;
+    }
+    .header-image {
+        margin:65px 0 0;
+    }
+    h1 {
+        margin:70px 0;
+    }
+    .social-icons {
+        margin-top:65px;
+    }
+    
+}
