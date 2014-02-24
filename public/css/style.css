@@ -5,19 +5,19 @@ body, html {
     font-size: 1em;
     line-height: 1.4;
     background:#040404;
+    color: #aaaaaa;
+    font-family: Arial, verdana, helvetica, sans-serif;
+    text-align: center;
 }
 
 a {
-    color: #00e;
+    color: #aaaaaa;
     outline:0;
-}
-
-a:visited {
-    color: #551a8b;
+    text-decoration: none;
 }
 
 a:hover {
-    color: #06e;
+    text-decoration: underline;
 }
 
 a img {
@@ -48,22 +48,27 @@ a img {
     margin:85px 0 0;
 }
 h1 {
-    margin:110px 0;
+    margin:110px 0 70px;
 }
 h1 img {
    width:100%; 
 }
+.header-image p {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+}
 
 .social-icons {
-    margin:85px 5% 0;
+    margin:55px 5% 0;
 }
 .social-icons .icon-spacer{
     display: block;
-    width:9%;
+    width:13.333333333%;
     float:left;
 }
 .social-icons a.social-icon {
-    width:18.25%;
+    width:15%;
     display:block;
     float:left;
 }
@@ -75,17 +80,24 @@ h1 img {
 }
 
 @media only screen and (max-width: 640px) {
+    body {
+        font-size:12px;
+    }
+
     .main-wrapper {
         width: 90%;
     }
     .header-image {
         margin:65px 0 0;
     }
+    .header-image p {
+        font-size: 15px;
+    }
     h1 {
-        margin:70px 0;
+        margin:70px 0 45px;
     }
     .social-icons {
-        margin-top:65px;
+        margin-top:45px;
     }
     
 }
