@@ -8,6 +8,8 @@ body, html {
     color: #aaaaaa;
     font-family: Arial, verdana, helvetica, sans-serif;
     text-align: center;
+    height:100%;
+    min-height:100%;
 }
 
 a {
@@ -35,6 +37,7 @@ a img {
 	width:60%;
 	max-width: 750px;
 	margin:0 auto;
+    height:100%;
 }    
 
 .white-line {
@@ -45,13 +48,26 @@ a img {
 }
 
 .header-image {
-    margin:85px 0 0;
+    margin:35px 0 0;
 }
 h1 {
-    margin:110px 0 70px;
+    margin:70px 0 66px;
 }
 h1 img {
    width:100%; 
+}
+table {
+    margin:0;
+    padding:0;
+    border-spacing:0;
+    width:100%;
+    height:100%;
+}
+td {
+    vertical-align: middle;
+}
+.clear {
+    clear:both;
 }
 .header-image p {
     text-transform: uppercase;
@@ -60,15 +76,15 @@ h1 img {
 }
 
 .social-icons {
-    margin:55px 5% 0;
+    margin:55px 5% 55px;
 }
 .social-icons .icon-spacer{
     display: block;
-    width:13.333333333%;
+    width:8%;
     float:left;
 }
 .social-icons a.social-icon {
-    width:15%;
+    width:13.6%;
     display:block;
     float:left;
 }
@@ -79,22 +95,35 @@ h1 img {
     width:100%;
 }
 
+@media only screen and (max-width: 1025px) {
+    .main-wrapper {
+        width: 60%;
+    }
+    h1 {
+        margin:55px 0 51px;
+    }
+    
+}
+
 @media only screen and (max-width: 640px) {
     body {
         font-size:12px;
+    }
+    h1 {
+        margin:45px 0 41px;
+    }
+    td {
+        padding:20px 0;
     }
 
     .main-wrapper {
         width: 90%;
     }
     .header-image {
-        margin:65px 0 0;
+        margin:0;
     }
     .header-image p {
         font-size: 15px;
-    }
-    h1 {
-        margin:70px 0 45px;
     }
     .social-icons {
         margin-top:45px;
